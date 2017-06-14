@@ -144,12 +144,12 @@ Cycling is an activity which is very attention demanding, therefore ways of inte
 \newline
 Some navigation applications solve this by using audio output for interacting, however this also proposes some challenges, since audio instructions can potentially be hard to hear and perceive, in a high stress traffic situation. Additionally using audio disengages the user from the surroundings and traffic, by blocking the audio modality.
 \subsection{Calm Technology}
-In order to let the user keep attention on the surroundings, an unobtrusive interaction is required. In order to obtain this, the 8 principles of calm technology, described by Amber Case, can be utilised  \ref{case}. The principles  defines how to make a technical system that demands the minimum amount of attention from the user, by only interacting with the user when necessary and choosing the right form of  interaction.  
+In order to let the user keep attention on the surroundings, an unobtrusive interaction is required. In order to obtain this, the 8 principles of calm technology, described by Amber Case, can be utilised \cite{case15}. The principles  defines how to make a technical system that demands the minimum amount of attention from the user, by only interacting with the user when necessary and choosing the right form of  interaction.  
 \newline
 \newline 
 While developing the system, it was chosen to base the interaction on vibration as output technology - also called the vibro-tactile modality, to obtain a high level of unobtrusiveness. This complies with the calm technology principles, especially  \#5 which states that speech and text often is not the most effective way to convey information and instead other ways should be explored.
 \section{Related Work}
-There are several studies made regarding vibro-tactile interaction, especially how the vibration can be perceived. These studies are elaborated on and used within this report.  Brown et al. defined a term “tacton”, and introduced five parameters, that influence that physical vibro-tactile output (Brown et al., 2006). These five parameters are:
+There are several studies made regarding vibro-tactile interaction, especially how the vibration can be perceived. These studies are elaborated on and used within this report.  Brown et al. defined a term "tacton", and introduced five parameters, that influence that physical vibro-tactile output \cite{brown06}. These five parameters are:
 \newline
 \newline
 Rhythm - a group of several pulses, with different durations and gaps between them.   
@@ -159,49 +159,64 @@ Roughness - combination of different frequencies and intensities make roughness
 Spatial location - the placement of a vibration module.  
 \newline
 \newline 
-These parameters are important while exploring how tactons can be made, and how different parameters affect the perception of vibro-tactile interaction. When combining these parameters, distinguishable tactons can be created, that ensures more efficient vibro-tactile interaction. Regarding the distinguishability, Lee and Starner conducted a study where people's ability to distinguish 24 different tactons was tested. It was found that after limited training, participants more able to distinguish between the tactons (Lee and Starner, 2010). Which shows that not only the five parameters introduced by Brown et al. can aid distinguishability, but there is also a learning curve. 
+These parameters are important while exploring how tactons can be made, and how different parameters affect the perception of vibro-tactile interaction. When combining these parameters, distinguishable tactons can be created, that ensures more efficient vibro-tactile interaction. Regarding the distinguishability, Lee and Starner conducted a study where people's ability to distinguish 24 different tactons was tested. It was found that after limited training, participants more able to distinguish between the tactons \cite{lee10}. Which shows that not only the five parameters introduced by Brown et al. can aid distinguishability, but there is also a learning curve. 
 \newline
 \newline
-There are several parameters that affected the people's ability to distinguish between tactons, such as Intensity and spatial location. Intensity was the hardest to distinguish between, while spatial location made it easier. Though, there are other phenomena that can affect vibro-tactile interaction, and how people perceive it (Myles and Binseel, 2007): 
+There are several parameters that affected the people's ability to distinguish between tactons, such as Intensity and spatial location. Intensity was the hardest to distinguish between, while spatial location made it easier. Though, there are other phenomena that can affect vibro-tactile interaction, and how people perceive it \cite{myles07}: 
 \newline
 \newline 
 Masking: occurs when there are multiple vibration stimuli on the same time and space. Making it hard to understand the tacton. 
 Adaption: occurs when one tacton is given constantly, making it appear weaker over time. 
 \newline
 \newline 
-One of the main concerns while developing a calm technology that utilises vibro-tactile interaction is whether users can perceive the vibration without it being obtrusive. Pielot and de Oliveira evaluated whether vibration could stay in people's periphery, thus being unobtrusive. They found that when vibration is just above threshold people would be aware of the vibration but would not deal a great deal of attention to it. Thus proving this stimulation useful for non-obtrusive communication, even though they perceived the vibration (Pielot and de Oliveira, 2013) .  
+One of the main concerns while developing a calm technology that utilises vibro-tactile interaction is whether users can perceive the vibration without it being obtrusive. Pielot and de Oliveira evaluated whether vibration could stay in people's periphery, thus being unobtrusive. They found that when vibration is just above threshold people would be aware of the vibration but would not deal a great deal of attention to it. Thus proving this stimulation useful for non-obtrusive communication, even though they perceived the vibration \cite{pielot13}.  
 \newline
 \newline
-There are different implementations of vibro-tactile modality as information channel. Heuten et al. created a vibro-tactile wayfinding system, by putting vibration modules in a belt which could then communicate the way to go. (Heuten et al,) Their findings showed that people can navigate using vibro-tactile modality, indicating that people can understand the information transferred through tactons. 
-Bial et al. used vibration to inform cyclists of their optimal pedalling frequency, by placing vibration modules in cyclists shoes. (Bial et al) This study supports the finding from Heuten et al., regarding people's ability to understand vibro-tactile modality. In addition to that, Bial et al. found that users experienced vibration as fun alternative way of interaction. 
+There are different implementations of vibro-tactile modality as information channel. Heuten et al. created a vibro-tactile wayfinding system, by putting vibration modules in a belt which could then communicate the way to go \cite{heuten08}. Their findings showed that people can navigate using vibro-tactile modality, indicating that people can understand the information transferred through tactons. 
+Bial et al. used vibration to inform cyclists of their optimal pedalling frequency, by placing vibration modules in cyclists shoes \cite{bial11}. This study supports the finding from Heuten et al., regarding people's ability to understand vibro-tactile modality. In addition to that, Bial et al. found that users experienced vibration as fun alternative way of interaction. 
 \newline
 \newline
-Popinga et al., researched the application of vibro-tactile interaction as a navigational tool, in addition to a visual display showing map. They found out that it is possible to use vibro-tactile modality to navigate on a bicycle. (Popinga et al.)
+Popinga et al., researched the application of vibro-tactile interaction as a navigational tool, in addition to a visual display showing map. They found out that it is possible to use vibro-tactile modality to navigate on a bicycle\cite{poppinga09}.
 \newline
 \newline
 These articles show other researchers approach towards vibro-tactile modality, how it is perceived by users and how it can be implemented in many different ways. Showing that even though vibro-tactile modality has its constraints, it can be used as alternative to conventional navigation, which uses audio and visual modality.
 \newline
 \newline
-Design Process (buxton)
-In our study we followed Buxtons method (buxton2007) for designing a product, which revolves around an iterative design process, where ideas are iteratively added and evolved, in what buxton describes as Concepts Generation. The designs are then reviewed or tested, to gain insight for improvement and eliminate some ideas, in what buxton describes as Controlled Convergence. The result is a funnel approach where the design starts wide, and then narrows in on a final concept.
-\newline
-\newline
-In our approach we start with a wide concepts generation, and then moved to user-based tests, first as a qualitative lab based test for exploring different prototype concepts, and later as a field test with a bulky but functional prototype. We then improved the design to small Bluetooth connected vibrational braceless, created a fully functional smartphone companion application and created and test additional tactons for the system. Finally a final user based field test was performed, where the latest version of the prototype was tested. 
 \section{Design Process}
-Prior to initial design we created had requirement specification which contained some general aspects that the final design concept should aim to fulfill. In the initial design phase we aimed to generate as many ideas as possible for designing calm interaction for bicycle navigation. Most ideas were created initially through stages of sketchings, and reviewed by discussing them. Additionally paper prototypes were created of different designs, to visualize how ideas would work.
+In our study we followed Buxtons method for designing a product, which revolves around an iterative design process, where ideas are iteratively added and evolved, in what buxton describes as Concepts Generation \cite{buxton07}. The designs are then reviewed or tested, to gain insight for improvement and eliminate some ideas, in what buxton describes as Controlled Convergence. The result is a funnel approach where the design starts wide, and then narrows in on a final concept.
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/1_development_model.png}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
+In our approach we start with a wide concepts generation, and then moved to user-based tests, first as a qualitative lab based test for exploring different prototype concepts, and later as a field test with a bulky but functional prototype. We then improved the design to small Bluetooth connected vibrational braceless, created a fully functional smartphone companion application and created and test additional tactons for the system. Finally a final user based field test was performed, where the latest version of the prototype was tested. 
 \newline
 \newline
+Prior to the initial design we created had requirement specification which contained some general aspects that the final design concept should aim to fulfill. In the initial design phase we aimed to generate as many ideas as possible for designing calm interaction for bicycle navigation. Most ideas were created initially through stages of sketchings, and reviewed by discussing them. Additionally paper prototypes were created of different designs, to visualize how ideas would work.
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/handle-button.jpg}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
 After the initial design process some potential ideas were chosen to be tested, these were vibrational gloves, vibrational helmet, and LED light in handlebars. All should inform the user of turns on their route, by vibrating/blinking when the user has to turn.
 \section{First Lab test: Exploratory}
 In an initial qualitative exploratory prototype lab test, three different design concepts were tested on four participants. The designs where; a vibration output through a helmet, vibration output in a pair of gloves and visual output on the handlebars. 
-For each design idea a prototype was created, using littleBits, which allow building simple functionally prototypes. The participants were asked to cycle on a stationary bicycle while watching a point-of-view video of a cyclist. The user then received signals for navigational instructions in synchronization with turns occurring on video. This was done through a wizard of oz type setup (ref wizard of oz), with a moderator sending output signals to the prototype. An additional test conductor was present to guide the test participants, and to note observations during the test. Each prototype was tested sequentially, followed by a short semi-structured interview, and a final interview after testing all prototypes.
-\newline
-\newline
+For each design idea a prototype was created, using littleBits, which allow building simple functionally prototypes. The participants were asked to cycle on a stationary bicycle while watching a point-of-view video of a cyclist. The user then received signals for navigational instructions in synchronization with turns occurring on video. This was done through a wizard of oz type setup, with a moderator sending output signals to the prototype. An additional test conductor was present to guide the test participants, and to note observations during the test. Each prototype was tested sequentially, followed by a short semi-structured interview, and a final interview after testing all prototypes.
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/eval1_setup.jpg}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
 The results from the test showed that participants prefered vibration to light output, since light required them to look away from the video screen which was impractical, and potentially safety critical. Vibration was found to be simple to understand and unobtrusive. The vibrational helmet was found to be impractical, since some users could not feel the vibration, due to the helmet size not fitting completely. The gloves were prefered by most participants, however it was noted that they would not be practical in a warm environment.
 \section{First Field Test: Prove of Concept}
 Based on the findings from the exploratory Labtest, a functioning prototype was created. It had gloves, one for each hand, with vibration modules, these were connected to an Arduino Uno. Additionally a mobile application was created to send navigational signals to the Arduino over Bluetooth. The mobile application relied on navigation data from Google Direction API, and had three predetermined destinations, with some visual output showing the navigational waypoints. 
-\newline
-\newline 
+
 This functioning prototype tested in a field test, to explore whether users could navigate to a destination using only vibro-tactile output. The system send navigational instruction as a vibration pattern when the user had to turn, which would indicate either right or left turn depending on which hand vibrated. 
 \newline
 \newline 
@@ -215,11 +230,30 @@ In total five people participated in the field test. This gave sufficient amount
 \newline
 \newline  
 The problems test participants encountered were mostly regarding the lack of functionality in the system. Only having one navigational instruction - turn, was found to be insufficient. Test participants did not know when they arrived at the destination, which caused them to pass the intended destination, and circle around it.
-\newline
-\newline 
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/enitial_prototype.png}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
+\begin{figure}
+\centering
+  \includegraphics[width=0.6\columnwidth]{figures/first_app.png}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
 The other problem was that participants did not know when a problem occurred. There was no feedback if a mobile phone disconnected from the wearable component, this caused major problems in navigation. Additionally if a participant was cycling in a wrong direction for a long time, there was no feedback, which lead to them cycling far from the original route, in some cases the moderator had to stop the participant and inform them they were going the wrong way. This led to some participants noting that they did not know if the system was working as intended, or if they were on the right route.
-\newline
-\newline 
+\begin{figure*}
+  \centering
+  \includegraphics[width=1.20\columnwidth]{figures/heatmap.jpg}
+  \caption{In this image, the map maximizes use of space. You can make
+    figures as wide as you need, up to a maximum of the full width of
+    both columns. Note that \LaTeX\ tends to render large figures on a
+    dedicated page. Image: \ccbynd~ayman on
+    Flickr.}~\label{fig:figure2}
+\end{figure*} 
 Furthermore, the majority of test participants thought that system was too big, and found it to be a seasonal technology, due to the gloves.
 These findings lead to a new iteration, where a improved concept was found. The findings can be summarized:
 \begin{itemize}
@@ -227,7 +261,14 @@ These findings lead to a new iteration, where a improved concept was found. The 
 \item Too big and seasonal technology 
 \end{itemize}  
 \section{Design Improvements}
-After testing the concept in a real live scenario the system was improved on. Since many test participants expressed that wireless wristbands would be better, which would solve both of these problems.Therefore the system was changed from gloves to wristband. Using smaller hardware components we were able to fit them all inside the wristband making the entire system only a bit larger than a smartwatch.\newline
+After testing the concept in a real live scenario the system was improved on. Since many test participants expressed that wireless wristbands would be better, which would solve both of these problems.Therefore the system was changed from gloves to wristband. Using smaller hardware components we were able to fit them all inside the wristband making the entire system only a bit larger than a smartwatch.
+\begin{figure}
+\centering
+  \includegraphics[width=0.9\columnwidth]{figures/product.png}
+  \caption{Insert a caption below each figure. Do not alter the
+    Caption style.  One-line captions should be centered; multi-line
+    should be justified. }~\label{fig:figure1}
+\end{figure}
 New navigation instructions were added to the system since it was found in the field test that users were lacking information from the system. This lead to the system having five navigation instructions
 \begin{itemize}
 \item Turn - instructing the user to turn either left or right.
@@ -244,6 +285,26 @@ Rhythm - slow and fast.
 Based on these, four tactons were designed for each navigational instruction, where each tacton differentiated in intensity and rhythm. Intensity and rhythm were chosen to be the main factors because these are the parameters that influenced the distinguishability of tacton. 
 \newline
 \newline
+\begin{table}
+\centering
+\small
+\begin{tabular} {p{2.0cm}p{2.0cm}p{2.0cm}}
+\toprule
+ & \textbf{Low intensity} & \textbf{HIGH intensity}  
+\tabularnewline 
+\midrule
+\textbf{Slow Rhythm} & Low/Slow & HIGH/Slow  
+\vspace{0.1cm} \tabularnewline
+\textbf{Fast Rhythm} & Low/Fast & HIGH/Fast 
+\vspace{0.1cm} 
+\tabularnewline
+\bottomrule
+\end{tabular}
+\caption{The four way differentiation between tactons.}
+\label{tab:stage_two_tacton_design}
+\end{table}
+\newline
+\newline
 Each of the tactons were sent to the test participant three times, and afterwards the participant had to evaluate the tacton on the suitability based on the context of navigational instruction, and whether they liked it. This procedure was repeated till all 20 (four for each navigational instruction) tactons were evaluated.
 \newline
 \newline
@@ -254,6 +315,15 @@ The final field test was performed in the same settings as the first field test.
 \newline
 \newline
 The test participants were given one destination at a time and had to use the system to navigate to the location. After the field test, participants answered some interview questions, these were derived from the Calm Technology principles, this was done to evaluate the “calm” quality of the system. In total 19 people participated in the evaluation.
+\begin{figure*}
+  \centering
+  \includegraphics[width=1.20\columnwidth]{figures/stort_heat_map.png}
+  \caption{In this image, the map maximizes use of space. You can make
+    figures as wide as you need, up to a maximum of the full width of
+    both columns. Note that \LaTeX\ tends to render large figures on a
+    dedicated page. Image: \ccbynd~ayman on
+    Flickr.}~\label{fig:figure2}
+\end{figure*}
 \subsection{Results}
 In the evaluation it was found that the system performed well, and many test participants expressed that the system required less attention than traditional navigational systems, such as Google maps and GPS. 
 \newline
@@ -269,8 +339,8 @@ Based on the interview, the majority of the calm technology principles were met 
 \section{Conclusion}
 Vibration worked well as an alternative way of sending navigational instructions. It was found to be unobtrusive, when only giving the relevant information, as required by Calm Technology principles. 
 And even though it is important to inform and keep calm, the information should be considered carefully, since too much information can do the opposite of intended. This was the case in the second prototype, were heartbeat confused the participants. When designing tactons, it is important to make them clearly distinguishable, and it should be avoided to rely on the users ability to easily distinguish many different tactons. However it should be noted that some related work suggests that users can be trained to better distinguish tactons. 
- 
-System is still too big for some test participants, and therefore developing an even smaller wearable would be optimal. 
+\newline
+The system is still too big for some test participants, and therefore developing an even smaller wearable would be optimal. 
 
 \section{Acknowledgements}
 
@@ -294,14 +364,6 @@ System is still too big for some test participants, and therefore developing an 
 % Or, just remove \balance and give up on balancing the last page.
 %
 \balance{}
-
-\section{References Format} 
-
-\cite{kaye:puc}
-
-
-
-
 
 % REFERENCES FORMAT
 % References must be the same font size as other body text.
