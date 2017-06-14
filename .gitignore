@@ -3,3 +3,6 @@ P6_paper.bbl
 P6_paper.blg
 P6_paper.log
 P6_paper.synctex.gz
+*.bak
+*.pdf
+*.out
