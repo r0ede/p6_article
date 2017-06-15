@@ -100,27 +100,27 @@
 \author{%
   \alignauthor{Alisa Ananjeva\\
     \affaddr{Aalborg University}\\
-    \affaddr{Selma Lagerlöfs Vej 300
+    \affaddr{Selma Lagerl{\"o}fs Vej 300
 DK-9220 Aalborg East}\\
     \email{ananj14@student.aau.dk}}\\
   \alignauthor{Jesper Quist Jensen\\
     \affaddr{Aalborg University}\\
-    \affaddr{Selma Lagerlöfs Vej 300
+    \affaddr{Selma Lagerl{\"o}fs Vej 300
 DK-9220 Aalborg East}\\
     \email{jqje14@student.aau.dk}}\\
   \alignauthor{Kenneth Uldbjerg J{\o}rgensen\\
     \affaddr{Aalborg University}\\
-    \affaddr{Selma Lagerlöfs Vej 300
+    \affaddr{Selma Lagerl{\"o}fs Vej 300
 DK-9220 Aalborg East}\\
     \email{kuja11@student.aau.dk}}\\
   \alignauthor{Rasmus Thygesen Larsen\\
     \affaddr{Aalborg University}\\
-    \affaddr{Selma Lagerlöfs Vej 300
+    \affaddr{Selma Lagerl{\"o}fs Vej 300
 DK-9220 Aalborg East}\\
     \email{rlarse14@student.aau.dk}}\\
   \alignauthor{Simon Boel Poulsen\\
     \affaddr{Aalborg University}\\
-    \affaddr{Selma Lagerlöfs Vej 300
+    \affaddr{Selma Lagerl{\"o}fs Vej 300
 DK-9220 Aalborg East}\\
     \email{sbpo14@student.aau.dk}}\\
 }
@@ -128,13 +128,13 @@ DK-9220 Aalborg East}\\
 \maketitle
 
 \begin{abstract}
-
+In this study we show that it is possible to design and develop a calm wearable navigation system for cyclists, based only on vibro-tactile output. Our design relies on vibro-tactile tactons utilized to communicate navigation instructions. Through several design iterations, and user tests the development of an understandable interaction was derived. We found that users were able to easily comprehend tactons and associate them with navigational instructions, when communicated in a relevant context. We also found that it is important to keep the user sufficiently informed at all times, to avoid loss of trust in system - however overly informing the user can also lead to confusion - keep it to the bare minimum for completing the task.
 \end{abstract}
 
 \category{H.5.m.}{Information Interfaces and Presentation
   (e.g. HCI)}{Miscellaneous}
 
-\keywords{Vibro-tactile modality; Navigation; Vibration; alternative interaction; Cycling navigation; Attention, Calm Technology, Periphery; Wearable}
+\keywords{Vibro-tactile modality; Navigation; Vibration; alternative interaction; Cycling navigation; Attention; Calm Technology; Periphery; Wearable, Bicycle}
 
 \section{Introduction}
 Cycling is an activity which is very attention demanding, therefore ways of interacting with technology while cycling are challenging. Cyclist often have a need of directions, for which smartphones provide ideal navigation applications. However traditional ways of interacting with smartphones are far from ideal for cyclists. Since it requires the user to either continuously stop cycling to look at their phone, or perform potentially dangerous multitasking interaction, by taking one hand of the handlebar and taking attention away from traffic to look at the screen. 
@@ -142,21 +142,21 @@ Cycling is an activity which is very attention demanding, therefore ways of inte
 \newline
 Some navigation applications solve this by using audio output for interacting, however this also proposes some challenges, since audio instructions can potentially be hard to hear and perceive, in a high stress traffic situation. Additionally using audio disengages the user from the surroundings and traffic, by blocking the audio modality.
 \subsection{Calm Technology}
-In order to let the user keep attention on the surroundings, an unobtrusive interaction is required. In order to obtain this, the 8 principles of calm technology, described by Amber Case, can be utilised \cite{case15}. The principles  defines how to make a technical system that demands the minimum amount of attention from the user, by only interacting with the user when necessary and choosing the right form of  interaction.  
+In order to let the user keep attention on the surroundings, an unobtrusive interaction is required. In order to obtain this, the eight principles of calm technology, described by Amber Case, can be utilised \cite{case15}. The principles  defines how to make a technical system that demands the minimum amount of attention from the user, by only interacting with the user when necessary and choosing the right form of  interaction.  
 \newline
 \newline 
 While developing the system, it was chosen to base the interaction on vibration as output technology - also called the vibro-tactile modality, to obtain a high level of unobtrusiveness. This complies with the calm technology principles, especially  \#5 which states that speech and text often is not the most effective way to convey information and instead other ways should be explored.
 \section{Related Work}
-There are several studies made regarding vibro-tactile interaction, especially how the vibration can be perceived. These studies are elaborated on and used within this report.  Brown et al. defined a term "tacton", and introduced five parameters, that influence that physical vibro-tactile output \cite{brown06}. These five parameters are:
+There are several studies made regarding vibro-tactile interaction, especially how the vibration can be perceived. These studies are elaborated on and used within this report.  Brown et al. defined a term "tacton", and introduced five parameters, which influence the physical vibro-tactile output \cite{brown06}. These five parameters are:
 \newline
 \newline
-Rhythm - a group of several pulses, with different durations and gaps between them.   
-Frequency - waves of a vibration. 
-Intensity - vibration amplitude. 
-Roughness - combination of different frequencies and intensities make roughness 
-Spatial location - the placement of a vibration module.  
-\newline
-\newline 
+\begin{itemize}
+\item \textbf{Rhythm}: a group of several pulses, with different durations and gaps between them.
+\item \textbf{Frequency}: waves of a vibration.
+\item \textbf{Intensity}: vibration amplitude.
+\item \textbf{Roughness}: combination of different frequencies and intensities make roughness-
+\item \textbf{Spatial location}: the placement of a vibration module.
+\end{itemize}
 These parameters are important while exploring how tactons can be made, and how different parameters affect the perception of vibro-tactile interaction. When combining these parameters, distinguishable tactons can be created, that ensures more efficient vibro-tactile interaction. Regarding the distinguishability, Lee and Starner conducted a study where people's ability to distinguish 24 different tactons was tested. It was found that after limited training, participants more able to distinguish between the tactons \cite{lee10}. Which shows that not only the five parameters introduced by Brown et al. can aid distinguishability, but there is also a learning curve. 
 \newline
 \newline
@@ -206,7 +206,7 @@ For each design idea a prototype was created, using littleBits, which allow buil
 \caption{Depiction of the lab test setting.}
 \label{fig:eval1_setup}
 \end{figure}
-The results from the test showed that participants prefered vibration to light output, since light required them to look away from the video screen which was impractical, and potentially safety critical. Vibration was found to be simple to understand and unobtrusive. The vibrational helmet was found to be impractical, since some users could not feel the vibration, due to the helmet size not fitting completely. The gloves were prefered by most participants, however it was noted that they would not be practical in a warm environment.
+The results from the test showed that participants preferred vibration to light output, since light required them to look away from the video screen which was impractical, and potentially safety critical. Vibration was found to be simple to understand and unobtrusive. The vibrational helmet was found to be impractical, since some users could not feel the vibration, due to the helmet size not fitting completely. The gloves were prefered by most participants, however it was noted that they would not be practical in a warm environment.
 \section{First Field Test: Prove of Concept}
 Based on the findings from the exploratory Labtest, a functioning prototype was created. It had gloves, one for each hand, with vibration modules, these were connected to an Arduino Uno. Additionally a mobile application was created to send navigational signals to the Arduino over Bluetooth. The mobile application relied on navigation data from Google Direction API, and had three predetermined destinations, with some visual output showing the navigational waypoints. 
 \newline
@@ -236,7 +236,7 @@ The problems test participants encountered were mostly regarding the lack of fun
 \begin{figure}[!b]
   \centering
   \includegraphics[width=1.02\columnwidth]{figures/heatmap.jpg}
-  \caption{Tracking record of the participants' route during the field test.}
+  \caption{Tracking record of the participants' route during the first field evaluation.}
     \label{fig:heatmap}
 \end{figure} 
 The other problem was that participants did not know when a problem occurred. There was no feedback if a mobile phone disconnected from the wearable component, this caused major problems in navigation. Additionally if a participant was cycling in a wrong direction for a long time, there was no feedback, which lead to them cycling far from the original route, in some cases the moderator had to stop the participant and inform them they were going the wrong way. This led to some participants noting that they did not know if the system was working as intended, or if they were on the right route.
@@ -297,23 +297,23 @@ Based on these, four tactons were designed for each navigational instruction, wh
 \noindent
 \newline
 \newline
-Each of the tactons were sent to the test participant three times, and afterwards the participant had to evaluate the tacton on the suitability based on the context of navigational instruction, and whether they liked it. This procedure was repeated till all 20 (four for each navigational instruction) tactons were evaluated.
+19 participants were included for this test. Each tactons were sent to the test participant three times, and afterwards the participant had to evaluate the tacton on the suitability based on the context of navigational instruction, and whether they liked it. This procedure was repeated till all 20 (four for each navigational instruction) tactons were evaluated.
 \newline
 \newline
 This lab test showed that instructions that required immediate attention (Arrival, Problem), had to be HIGH/FAST or HIGH/SLOW, indicating that high intensity is important parameter when there is a need for attention. 
-While navigational instructions that should stay in users periphery or inform users gradually (Heartbeat, U-turn and Turn) required low intensity and slow rhythm. This information was used when choosing the final tactons that were implemented in the system.  
+While navigational instructions that should stay in users periphery or inform users gradually (Heartbeat, U-turn and Turn) required low intensity and slow rhythm. This information was used when choosing the tactons that were implemented in the physical system.  
 \section{Second Field test}
 The final field test was performed in the same settings as the first field test.The users were handed the system and had to themselves find out how to use it, with help from the tutorial in the mobile application. When they were familiar with the system - the test began. The same route was chosen as in the first field test with the same three destinations. 
 \newline
 \newline
-The test participants were given one destination at a time and had to use the system to navigate to the location. After the field test, participants answered some interview questions, these were derived from the Calm Technology principles, this was done to evaluate the ''calm'' quality of the system. In total 19 people participated in the evaluation.
+The test participants were given one destination at a time and had to use the system to navigate to the location. After the field test, participants answered some interview questions, these were derived from the Calm Technology principles, this was done to evaluate the ''calm'' quality of the system. In total nine people participated in the evaluation.
 \begin{figure}[!b]
   \centering
   \includegraphics[width=1.02\columnwidth]{figures/stort_heat_map.png}
-  \caption{The tracking of the 19 participants' routes for the field evaluation.}
+  \caption{The tracking of the nine participants' routes for the second field evaluation.}
   \label{fig:stort_heat_map}
 \end{figure}
-\subsection{Results}
+\section{Results}
 In the evaluation it was found that the system performed well, and many test participants expressed that the system required less attention than traditional navigational systems, such as Google maps and GPS. 
 \newline
 \newline
@@ -332,7 +332,7 @@ And even though it is important to inform and keep calm, the information should 
 The system is still too big for some test participants, and therefore developing an even smaller wearable would be optimal. 
 
 \section{Acknowledgements}
-
+We would like to extend our sincerest gratitude to Dimitrios Raptis for his help with this paper. We would also like to thank all of our participating subjects for their help in these studies. Finally we would like to give thanks to our study secretary Lone Elgaard.
 % Balancing columns in a ref list is a bit of a pain because you
 % either use a hack like flushend or balance, or manually insert
 % a column break.  http://www.tex.ac.uk/cgi-bin/texfaq2html?label=balance
