@@ -102,17 +102,17 @@
     \affaddr{Aalborg University}\\
     \affaddr{Selma Lagerlöfs Vej 300
 DK-9220 Aalborg East}\\
-    \email{aananj14@student.aau.dk}}\\
+    \email{ananj14@student.aau.dk}}\\
   \alignauthor{Jesper Quist Jensen\\
     \affaddr{Aalborg University}\\
     \affaddr{Selma Lagerlöfs Vej 300
 DK-9220 Aalborg East}\\
     \email{jqje14@student.aau.dk}}\\
-  \alignauthor{Kenneth Ulbjerg Jørgensen\\
+  \alignauthor{Kenneth Uldbjerg J{\o}rgensen\\
     \affaddr{Aalborg University}\\
     \affaddr{Selma Lagerlöfs Vej 300
 DK-9220 Aalborg East}\\
-    \email{kuja14@student.aau.dk}}\\
+    \email{kuja11@student.aau.dk}}\\
   \alignauthor{Rasmus Thygesen Larsen\\
     \affaddr{Aalborg University}\\
     \affaddr{Selma Lagerlöfs Vej 300
@@ -132,11 +132,9 @@ DK-9220 Aalborg East}\\
 \end{abstract}
 
 \category{H.5.m.}{Information Interfaces and Presentation
-  (e.g. HCI)}{Miscellaneous} \category{See
-  \url{http://acm.org/about/class/1998/} for the full list of ACM
-  classifiers. This section is required.}{}{}
+  (e.g. HCI)}{Miscellaneous}
 
-\keywords{\plainkeywords}
+\keywords{Vibro-tactile modality; Navigation; Vibration; alternative interaction; Cycling navigation; Attention, Calm Technology, Periphery; Wearable}
 
 \section{Introduction}
 Cycling is an activity which is very attention demanding, therefore ways of interacting with technology while cycling are challenging. Cyclist often have a need of directions, for which smartphones provide ideal navigation applications. However traditional ways of interacting with smartphones are far from ideal for cyclists. Since it requires the user to either continuously stop cycling to look at their phone, or perform potentially dangerous multitasking interaction, by taking one hand of the handlebar and taking attention away from traffic to look at the screen. 
@@ -180,27 +178,23 @@ Popinga et al., researched the application of vibro-tactile interaction as a nav
 \newline
 \newline
 These articles show other researchers approach towards vibro-tactile modality, how it is perceived by users and how it can be implemented in many different ways. Showing that even though vibro-tactile modality has its constraints, it can be used as alternative to conventional navigation, which uses audio and visual modality.
-\newline
-\newline
+
 \section{Design Process}
 In our study we followed Buxtons method for designing a product, which revolves around an iterative design process, where ideas are iteratively added and evolved, in what buxton describes as Concepts Generation \cite{buxton07}. The designs are then reviewed or tested, to gain insight for improvement and eliminate some ideas, in what buxton describes as Controlled Convergence. The result is a funnel approach where the design starts wide, and then narrows in on a final concept.
 \begin{figure}
 \centering
-  \includegraphics[width=0.9\columnwidth]{figures/1_development_model.png}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
+  \includegraphics[width=1.02\columnwidth]{figures/1_development_model.png}
+  \caption{Bill Buxton's development model.
+}\label{fig:1_development_model}
 \end{figure}
 In our approach we start with a wide concepts generation, and then moved to user-based tests, first as a qualitative lab based test for exploring different prototype concepts, and later as a field test with a bulky but functional prototype. We then improved the design to small Bluetooth connected vibrational braceless, created a fully functional smartphone companion application and created and test additional tactons for the system. Finally a final user based field test was performed, where the latest version of the prototype was tested. 
 \newline
 \newline
 Prior to the initial design we created had requirement specification which contained some general aspects that the final design concept should aim to fulfill. In the initial design phase we aimed to generate as many ideas as possible for designing calm interaction for bicycle navigation. Most ideas were created initially through stages of sketchings, and reviewed by discussing them. Additionally paper prototypes were created of different designs, to visualize how ideas would work.
-\begin{figure}
+\begin{figure}[!b]
 \centering
-  \includegraphics[width=0.9\columnwidth]{figures/handle-button.jpg}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
+  \includegraphics[width=0.8\columnwidth]{figures/handle-button.jpg}
+  \caption{An example of the paper prototypes created during initial design.}\label{fig:figure1}
 \end{figure}
 After the initial design process some potential ideas were chosen to be tested, these were vibrational gloves, vibrational helmet, and LED light in handlebars. All should inform the user of turns on their route, by vibrating/blinking when the user has to turn.
 \section{First Lab test: Exploratory}
@@ -208,18 +202,22 @@ In an initial qualitative exploratory prototype lab test, three different design
 For each design idea a prototype was created, using littleBits, which allow building simple functionally prototypes. The participants were asked to cycle on a stationary bicycle while watching a point-of-view video of a cyclist. The user then received signals for navigational instructions in synchronization with turns occurring on video. This was done through a wizard of oz type setup, with a moderator sending output signals to the prototype. An additional test conductor was present to guide the test participants, and to note observations during the test. Each prototype was tested sequentially, followed by a short semi-structured interview, and a final interview after testing all prototypes.
 \begin{figure}
 \centering
-  \includegraphics[width=0.9\columnwidth]{figures/eval1_setup.jpg}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
+\includegraphics[width=0.9\columnwidth]{figures/eval1_setup.jpg}
+\caption{Depiction of the lab test setting.}
+\label{fig:eval1_setup}
 \end{figure}
 The results from the test showed that participants prefered vibration to light output, since light required them to look away from the video screen which was impractical, and potentially safety critical. Vibration was found to be simple to understand and unobtrusive. The vibrational helmet was found to be impractical, since some users could not feel the vibration, due to the helmet size not fitting completely. The gloves were prefered by most participants, however it was noted that they would not be practical in a warm environment.
 \section{First Field Test: Prove of Concept}
 Based on the findings from the exploratory Labtest, a functioning prototype was created. It had gloves, one for each hand, with vibration modules, these were connected to an Arduino Uno. Additionally a mobile application was created to send navigational signals to the Arduino over Bluetooth. The mobile application relied on navigation data from Google Direction API, and had three predetermined destinations, with some visual output showing the navigational waypoints. 
-
-This functioning prototype tested in a field test, to explore whether users could navigate to a destination using only vibro-tactile output. The system send navigational instruction as a vibration pattern when the user had to turn, which would indicate either right or left turn depending on which hand vibrated. 
 \newline
-\newline 
+\newline
+This functioning prototype tested in a field test, to explore whether users could navigate to a destination using only vibro-tactile output. The system send navigational instruction as a vibration pattern when the user had to turn, which would indicate either right or left turn depending on which hand vibrated. 
+\begin{figure}
+\centering
+\includegraphics[width=1.01\columnwidth]{figures/enitial_prototype.png}
+\caption{The early prototype used for field testing.}
+\label{fig:enitial_prototype}
+\end{figure} 
 During the field test, test participants were asked to navigate to three destinations, by only utilising the vibro-tactile modality. The participants were tracked while they were navigating. The data was later used to make a heatmap showing their deviation on the route. The predetermined route, was in a low traffic area with many bicycle paths, to ensure the safety of the participants. 
 \newline
 \newline 
@@ -227,33 +225,23 @@ After the field test the participants were interviewed, to find out about their 
 \newline
 \newline  
 In total five people participated in the field test. This gave sufficient amount of qualitative data. Test participants were excited about the system, they found it to be innovative and interesting due to the alternative way of navigating which enabled them to be aware of their surroundings.
-\newline
-\newline  
+%\begin{figure}
+%\centering
+%  \includegraphics[width=0.6\columnwidth]{figures/first_app.png}
+%  \caption{Insert a caption below each figure. Do not alter the
+%    Caption style.  One-line captions should be centered; multi-line
+%    should be justified. }~\label{fig:figure1}
+%\end{figure}
 The problems test participants encountered were mostly regarding the lack of functionality in the system. Only having one navigational instruction - turn, was found to be insufficient. Test participants did not know when they arrived at the destination, which caused them to pass the intended destination, and circle around it.
-\begin{figure}
-\centering
-  \includegraphics[width=0.9\columnwidth]{figures/enitial_prototype.png}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
-\end{figure}
-\begin{figure}
-\centering
-  \includegraphics[width=0.6\columnwidth]{figures/first_app.png}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
-\end{figure}
-The other problem was that participants did not know when a problem occurred. There was no feedback if a mobile phone disconnected from the wearable component, this caused major problems in navigation. Additionally if a participant was cycling in a wrong direction for a long time, there was no feedback, which lead to them cycling far from the original route, in some cases the moderator had to stop the participant and inform them they were going the wrong way. This led to some participants noting that they did not know if the system was working as intended, or if they were on the right route.
-\begin{figure*}
+\begin{figure}[!b]
   \centering
-  \includegraphics[width=1.20\columnwidth]{figures/heatmap.jpg}
-  \caption{In this image, the map maximizes use of space. You can make
-    figures as wide as you need, up to a maximum of the full width of
-    both columns. Note that \LaTeX\ tends to render large figures on a
-    dedicated page. Image: \ccbynd~ayman on
-    Flickr.}~\label{fig:figure2}
-\end{figure*} 
+  \includegraphics[width=1.02\columnwidth]{figures/heatmap.jpg}
+  \caption{Tracking record of the participants' route during the field test.}
+    \label{fig:heatmap}
+\end{figure} 
+The other problem was that participants did not know when a problem occurred. There was no feedback if a mobile phone disconnected from the wearable component, this caused major problems in navigation. Additionally if a participant was cycling in a wrong direction for a long time, there was no feedback, which lead to them cycling far from the original route, in some cases the moderator had to stop the participant and inform them they were going the wrong way. This led to some participants noting that they did not know if the system was working as intended, or if they were on the right route.
+\newline
+\newline
 Furthermore, the majority of test participants thought that system was too big, and found it to be a seasonal technology, due to the gloves.
 These findings lead to a new iteration, where a improved concept was found. The findings can be summarized:
 \begin{itemize}
@@ -262,13 +250,12 @@ These findings lead to a new iteration, where a improved concept was found. The 
 \end{itemize}  
 \section{Design Improvements}
 After testing the concept in a real live scenario the system was improved on. Since many test participants expressed that wireless wristbands would be better, which would solve both of these problems.Therefore the system was changed from gloves to wristband. Using smaller hardware components we were able to fit them all inside the wristband making the entire system only a bit larger than a smartwatch.
-\begin{figure}
-\centering
-  \includegraphics[width=0.9\columnwidth]{figures/product.png}
-  \caption{Insert a caption below each figure. Do not alter the
-    Caption style.  One-line captions should be centered; multi-line
-    should be justified. }~\label{fig:figure1}
-\end{figure}
+%Physical wristbands pic
+%\begin{figure}
+%\centering
+%\includegraphics[width=1.02\columnwidth]{figures/wristband_evaluation.png}
+%\caption{Comparison evaluation of physical wristbands}\label{fig:wristband_evaluation}
+%\end{figure}
 New navigation instructions were added to the system since it was found in the field test that users were lacking information from the system. This lead to the system having five navigation instructions
 \begin{itemize}
 \item Turn - instructing the user to turn either left or right.
@@ -277,14 +264,18 @@ New navigation instructions were added to the system since it was found in the f
 \item Problem - telling the user that a problem with the system has arisen such as a lost connection.
 \item Heartbeat - indicating to the user that everything is functioning as intended, and that they are on the right path.
 \end{itemize} 
-A new Android application was also developed with a cleaner interface, ability to search addresses, more detailed route visualisation and a tutorial for the system. The Tutorial informs the user of the different instructions and demonstrates the different tactons.This lead us to a new lab test to examine how to design the different tactons for each instruction
+\begin{figure}[!b]
+\centering
+\includegraphics[width=1.02\columnwidth]{figures/product.png}
+\caption{The developed wristbands with hardware. }\label{fig:product}
+\end{figure}
+A new Android application was also developed with a cleaner interface, ability to search addresses, more detailed route visualisation and a tutorial for the system. The Tutorial informs the user of the different instructions and demonstrates the different tactons.This lead us to a new lab test to examine how to design the different tactons for each instruction.
+
 \section{Second Lab Test: Designing Tactons}
 When designing different tactons for each navigational instruction it was determined to design four different tactons for each of five navigational instructions. The tactons were made based on two factors that can influence a tacton:\newline
 Intensity - high and low 
 Rhythm - slow and fast.
 Based on these, four tactons were designed for each navigational instruction, where each tacton differentiated in intensity and rhythm. Intensity and rhythm were chosen to be the main factors because these are the parameters that influenced the distinguishability of tacton. 
-\newline
-\newline
 \begin{table}
 \centering
 \small
@@ -303,6 +294,7 @@ Based on these, four tactons were designed for each navigational instruction, wh
 \caption{The four way differentiation between tactons.}
 \label{tab:stage_two_tacton_design}
 \end{table}
+\noindent
 \newline
 \newline
 Each of the tactons were sent to the test participant three times, and afterwards the participant had to evaluate the tacton on the suitability based on the context of navigational instruction, and whether they liked it. This procedure was repeated till all 20 (four for each navigational instruction) tactons were evaluated.
@@ -314,16 +306,13 @@ While navigational instructions that should stay in users periphery or inform us
 The final field test was performed in the same settings as the first field test.The users were handed the system and had to themselves find out how to use it, with help from the tutorial in the mobile application. When they were familiar with the system - the test began. The same route was chosen as in the first field test with the same three destinations. 
 \newline
 \newline
-The test participants were given one destination at a time and had to use the system to navigate to the location. After the field test, participants answered some interview questions, these were derived from the Calm Technology principles, this was done to evaluate the “calm” quality of the system. In total 19 people participated in the evaluation.
-\begin{figure*}
+The test participants were given one destination at a time and had to use the system to navigate to the location. After the field test, participants answered some interview questions, these were derived from the Calm Technology principles, this was done to evaluate the ''calm'' quality of the system. In total 19 people participated in the evaluation.
+\begin{figure}[!b]
   \centering
-  \includegraphics[width=1.20\columnwidth]{figures/stort_heat_map.png}
-  \caption{In this image, the map maximizes use of space. You can make
-    figures as wide as you need, up to a maximum of the full width of
-    both columns. Note that \LaTeX\ tends to render large figures on a
-    dedicated page. Image: \ccbynd~ayman on
-    Flickr.}~\label{fig:figure2}
-\end{figure*}
+  \includegraphics[width=1.02\columnwidth]{figures/stort_heat_map.png}
+  \caption{The tracking of the 19 participants' routes for the field evaluation.}
+  \label{fig:stort_heat_map}
+\end{figure}
 \subsection{Results}
 In the evaluation it was found that the system performed well, and many test participants expressed that the system required less attention than traditional navigational systems, such as Google maps and GPS. 
 \newline
